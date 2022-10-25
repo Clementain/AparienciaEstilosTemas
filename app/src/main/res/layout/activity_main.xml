@@ -12,11 +12,12 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginBottom="88dp"
         android:text="@string/btnBorderless"
-        app:layout_constraintStart_toStartOf="@+id/tvAppearence"
-        app:layout_constraintTop_toBottomOf="@+id/tvAppearence"
+        app:layout_constraintBottom_toTopOf="@+id/tvSombra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="TextContrastCheck" />
 
     <TextView
@@ -24,12 +25,12 @@
         style="@style/GreenText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginBottom="32dp"
         android:text="@string/textoHeredado"
         android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/tvbiblioteca"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextContrastCheck" />
 
     <TextView
@@ -37,11 +38,12 @@
         style="@style/GreenText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginBottom="44dp"
         android:text="@string/textobiblioteca"
-        app:layout_constraintStart_toStartOf="@+id/tvPredAndroid"
-        app:layout_constraintTop_toBottomOf="@+id/tvPredAndroid"
+        app:layout_constraintBottom_toTopOf="@+id/tvTamanio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="TextContrastCheck" />
 
     <TextView
@@ -49,24 +51,25 @@
         style="@style/GreenText.Large"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="40dp"
         android:text="@string/textoLargo"
         android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/tvAppearence"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvbiblioteca"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/tvAppearence"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginBottom="60dp"
         android:text="@string/textApp"
         android:textAppearance="@android:style/TextAppearance.Material.Headline"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTamanio" />
+        app:layout_constraintBottom_toTopOf="@+id/btnSinBorde1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
@@ -74,8 +77,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="16dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginBottom="56dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="84dp"
         android:contentDescription="@string/submit"
         android:src="@android:drawable/ic_menu_delete"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -85,15 +88,15 @@
         android:id="@+id/tvSombra"
         android:layout_width="190dp"
         android:layout_height="105dp"
-        android:layout_marginTop="240dp"
+        android:layout_marginBottom="160dp"
         android:background="@drawable/myrect"
         android:elevation="10dp"
         android:text="@string/tvSombra"
         android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTamanio"
         tools:ignore="TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
