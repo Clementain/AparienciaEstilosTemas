@@ -7,71 +7,86 @@
     android:layout_margin="16dp"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnSinBorde1"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="44dp"
-        android:text="@string/btnBorderless"
-        app:layout_constraintBottom_toTopOf="@+id/tvSombra"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="TextContrastCheck" />
-
-    <TextView
-        android:id="@+id/tvPredAndroid"
-        style="@style/GreenText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="@string/textoHeredado"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/tvbiblioteca"
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/tvbiblioteca"
-        style="@style/GreenText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="44dp"
-        android:text="@string/textobiblioteca"
-        app:layout_constraintBottom_toTopOf="@+id/tvTamanio"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="TextContrastCheck" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tvTamanio"
-        style="@style/GreenText.Large"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
-        android:text="@string/textoLargo"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/tvAppearence"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="TextContrastCheck" />
+            <TextView
+                android:id="@+id/tvPredAndroid"
+                style="@style/GreenText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="32dp"
+                android:text="@string/textoHeredado"
+                android:textAlignment="center"
+                tools:ignore="TextContrastCheck" />
 
-    <TextView
-        android:id="@+id/tvAppearence"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
-        android:text="@string/textApp"
-        android:textAppearance="@android:style/TextAppearance.Material.Headline"
-        app:layout_constraintBottom_toTopOf="@+id/btnSinBorde1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/tvbiblioteca"
+                style="@style/GreenText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="44dp"
+                android:text="@string/textobiblioteca"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/tvTamanio"
+                style="@style/GreenText.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="40dp"
+                android:text="@string/textoLargo"
+                android:textAlignment="center"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/tvAppearence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="60dp"
+                android:text="@string/textApp"
+                android:textAppearance="@android:style/TextAppearance.Material.Headline" />
+
+            <Button
+                android:id="@+id/btnSinBorde1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="44dp"
+                android:text="@string/btnBorderless"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/tvSombra"
+                android:layout_width="190dp"
+                android:layout_height="105dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="80dp"
+                android:background="@drawable/myrect"
+                android:elevation="10dp"
+                android:text="@string/tvSombra"
+                android:textAlignment="center"
+                tools:ignore="TextContrastCheck" />
+
+        </LinearLayout>
+    </ScrollView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
@@ -85,20 +100,5 @@
         android:src="@android:drawable/ic_menu_delete"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/tvSombra"
-        android:layout_width="190dp"
-        android:layout_height="105dp"
-        android:layout_marginBottom="80dp"
-        android:background="@drawable/myrect"
-        android:elevation="10dp"
-        android:text="@string/tvSombra"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
