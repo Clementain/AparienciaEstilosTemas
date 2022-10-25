@@ -11,6 +11,7 @@
         android:id="@+id/scrollView3"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,8 +20,10 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:orientation="vertical">
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:padding="16dp">
 
             <TextView
                 android:id="@+id/tvPredAndroid"
@@ -61,6 +64,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="60dp"
                 android:text="@string/textApp"
+                android:textAlignment="center"
                 android:textAppearance="@android:style/TextAppearance.Material.Headline" />
 
             <Button
