@@ -5,7 +5,6 @@
     <string name="textoLargo">Texto Largo</string>
     <string name="textApp">Texto por textAppearance</string>
     <string name="btnBorderless">Boton sin bordes</string>
-    <string name="btnBordStyle">Boton sin bordes (estilo)</string>
     <string name="submit">Submit</string>
     <string name="tvSombra">Este TextView tiene una sombra</string>
 </resources>
