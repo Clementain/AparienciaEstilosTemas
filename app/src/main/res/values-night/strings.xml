@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="textoHeredado">Esteb texto hereda la apariencia de texto predeterminada de android</string>
-    <string name="textobiblioteca">Este texto hereda de una biblioteca</string>
-    <string name="textoLargo">Este texto extiende el tamaño de letra del el estilo del primer texto</string>
-    <string name="textApp">El estilo de este texto es por textAppearance</string>
+    <string name="textoHeredado">Texto predeterminada de android</string>
+    <string name="textobiblioteca">Biblioteca</string>
+    <string name="textoLargo">Texto Largo</string>
+    <string name="textApp">Texto por textAppearance</string>
     <string name="btnBorderless">Boton sin bordes</string>
     <string name="btnBordStyle">Boton sin bordes (estilo)</string>
+    <string name="submit">Submit</string>
     <string name="tvSombra">Este TextView tiene una sombra</string>
 </resources>
